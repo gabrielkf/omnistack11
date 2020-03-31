@@ -1,14 +1,17 @@
 {
   "name": "omnistack11",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.5",
+  "main": "app.js",
   "author": "gabrielkf <gabrielkf@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/server.js",
+    "test": "cross-env NODE_ENV=test jest"
   },
   "dependencies": {
+    "celebrate": "^12.0.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "global": "^4.4.0",
     "knex": "^0.20.13",
@@ -16,6 +19,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.2",
+    "jest": "^25.2.3",
+    "supertest": "^4.0.2"
   }
 }
